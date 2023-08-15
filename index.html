@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">TODO List</h1>
+
+      <div class="box input-section">
+        <h2>Add New Task</h2>
+        <input id="taskInput" type="text" placeholder="Enter your task..." />
+        <button id="addTaskButton" class="addTaskButton">Add Task</button>
+      </div>
+
+      <div class="box tasks-section">
+        <h2>Pending Tasks</h2>
+        <ul id="taskList"></ul>
+      </div>
+    </div>
+
+    <div id="popup" class="popup">
+      <svg
+        class="tick-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-width="40"
+          d="M416 128L192 384l-96-96"
+        />
+      </svg>
+      <p id="popupMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
